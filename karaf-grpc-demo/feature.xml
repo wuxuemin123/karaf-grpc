@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+          name="panacea-talk-2.0.0">
+	
+	<feature name="talk"
+	         description=""
+	         version="2.0.0">
+        <bundle start="true">wrap:mvn:io.grpc/grpc-core-context/1.13.1</bundle>
+        <bundle start="true">mvn:com.google.code.gson/gson/2.8.5</bundle>
+        <bundle start="true">mvn:com.google.guava/guava/23.0</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-auth/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-netty/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-okhttp/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-protobuf/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-protobuf-lite/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.grpc/grpc-stub/1.13.1</bundle>
+        <bundle start="true">wrap:mvn:io.opencensus/opencensus-api/0.15.0</bundle>
+        <bundle start="true">wrap:mvn:io.opencensus/opencensus-contrib-grpc-metrics/0.15.0</bundle>
+        <bundle start="true">wrap:mvn:com.squareup.okhttp/okhttp/2.5.0</bundle>
+        <bundle start="true">wrap:mvn:com.squareup.okio/okio/1.6.0</bundle>
+        <bundle start="true">mvn:com.google.protobuf/protobuf-java/3.6.1</bundle>
+        <bundle start="true">mvn:com.google.protobuf.nano/protobuf-javanano/3.2.0rc2</bundle>
+        <bundle start="true">mvn:io.netty/netty-codec-socks/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-buffer/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-codec/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-codec-http/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-codec-http2/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-handler-proxy/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-common/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-handler/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-resolver/4.1.29.Final</bundle>
+        <bundle start="true">mvn:io.netty/netty-transport/4.1.29.Final</bundle>
+		
+		<bundle start="true">mvn:cn.synway/talk.grpc/2.0.0</bundle>
+		<bundle start="true">mvn:cn.synway/talk.grpcclient/2.0.0</bundle>
+	</feature>
+</features>
